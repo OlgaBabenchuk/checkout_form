@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header></header>
+  <section>
+    <div class="card">
+      <h2 class="section-title">Оформление заказа</h2>
+      <div class="card__body">
+        <div class="order-form">
+          <ul class="order-form__tabs">
+            <li class="order-form__tab is-active">Я новый
+              <br>покупатель</li>
+            <li class="order-form__tab is-registered">Я зарегистрированный
+              <br>покупатель</li>
+          </ul>
+          <div class="order-form__body">
+            <h3 class="form-title">Получатель заказа</h3>
+            <form class="buyer-form">
+              <label class="form-subtitle">Имя и фамилия
+                <input type="text">
+              </label>
+              <label class="form-subtitle">Телефон
+                <input type="tel">
+              </label>
+              <label class="form-subtitle">Город
+                <input type="text" value="Киев">
+              </label>
+              <label class="form-subtitle">Эл. почта
+                <input type="email" value="user@mail.com">
+              </label>
+              <div class="add-comment">Добавить комментарий к заказу</div>
+              <textarea placeholder="Оставьте свой комментарий"></textarea>
+            </form>
+            <div class="shipping">
+              <div class="form-title">Доставка
+                <div class="select-wrap">
+                  <select>
+                    <option value="branch-1">«Новая почта» — 25 грн.</option>
+                    <option value="branch-2">Branch 2</option>
+                    <option value="branch-3">Branch 3</option>
+                    <option value="branch-4">Branch 4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-subtitle">Адрес склада
+                <div class="select-wrap">
+                  <select>
+                    <option value="address-1">Address 1</option>
+                    <option value="address-2">Address 2</option>
+                    <option value="address-3">Address 3</option>
+                    <option value="address-4" selected>Львов, Отделение №8 (до 30 кг): ул. Гетьмана И. Мазепы, 37</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="pay">
+              <div class="form-title">Оплата
+                <div class="select-wrap">
+                  <select>
+                    <option value="pay-1">Pay 1</option>
+                    <option value="pay-2" selected>наложеный платёж</option>
+                    <option value="pay-3">Pay 3</option>
+                    <option value="pay-4">Pay 4</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <button class="btns" type="submit">Оформить заказ</button>
+          </div>
+        </div>
+        <div class="orders">
+          <h3 class="form-title">Ваш заказ</h3>
+          <div class="order">
+            <div class="img-wrap">
+              <img src="./img/nikonD5.png" alt="">
+            </div><a href="#">Цифровий фотоапарат Nikon D5100 kit (18-55 VR)</a>
+            <div class="order-price">
+              <div class="order__qtty">6 568 грн. × 1 шт.</div>
+              <div class="order__cost">6 568 грн.</div>
+            </div>
+          </div>
+          <div class="order">
+            <div class="img-wrap">
+              <img src="./img/iPod5Gen.png" alt="">
+            </div><a href="#">MP3-плеер Apple iPod Touch 5Gen 32Gb blue</a>
+            <div class="order-price">
+              <div class="order__qtty">3 689 грн. × 1 шт.</div>
+              <div class="order__cost">3 689 грн.</div>
+            </div>
+          </div>
+          <div class="order__total-cost">9 769,15 грн.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>

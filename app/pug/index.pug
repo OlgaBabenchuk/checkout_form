@@ -1,0 +1,77 @@
+doctype html
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+html(lang="en")
+
+	head
+		include modules/head.pug
+	body
+		header
+		section
+			.card
+				h2.section-title Оформление заказа
+				.card__body
+					.order-form
+						ul.order-form__tabs
+							li.order-form__tab.is-active Я новый<br> покупатель
+							li.order-form__tab.is-registered Я зарегистрированный<br> покупатель
+						.order-form__body
+							h3.form-title Получатель заказа
+							form.buyer-form
+								label.form-subtitle Имя и фамилия
+									input(type="text")
+								label.form-subtitle Телефон
+									input(type="tel")
+								label.form-subtitle Город
+									input(type="text" value="Киев")
+								label.form-subtitle Эл. почта
+									input(type="email" value="user@mail.com")
+								.add-comment Добавить комментарий к заказу
+
+								textarea(placeholder="Оставьте свой комментарий")
+							.shipping
+								.form-title Доставка
+									.select-wrap
+										select
+											option(value="branch-1") «Новая почта» — 25 грн.
+											option(value="branch-2") Branch 2
+											option(value="branch-3") Branch 3
+											option(value="branch-4") Branch 4
+								.form-subtitle Адрес склада
+									.select-wrap
+										select
+											option(value="address-1") Address 1
+											option(value="address-2") Address 2
+											option(value="address-3") Address 3
+											option(value="address-4" selected) Львов, Отделение №8 (до 30 кг): ул. Гетьмана И. Мазепы, 37
+							.pay
+								.form-title Оплата
+									.select-wrap
+										select
+											option(value="pay-1") Pay 1
+											option(value="pay-2" selected) наложеный платёж
+											option(value="pay-3") Pay 3
+											option(value="pay-4") Pay 4
+							button(type="submit").btns Оформить заказ
+					.orders
+						h3.form-title Ваш заказ
+						.order
+							.img-wrap
+								img(src="./img/nikonD5.png" alt="")
+							a(href="#") Цифровий фотоапарат Nikon D5100 kit (18-55 VR)
+							.order-price
+								.order__qtty 6 568 грн. × 1 шт.
+								.order__cost 6 568 грн.
+						.order
+							.img-wrap
+								img(src="./img/iPod5Gen.png" alt="")
+							a(href="#") MP3-плеер Apple iPod Touch 5Gen 32Gb blue
+							.order-price
+								.order__qtty 3 689 грн. × 1 шт.
+								.order__cost 3 689 грн.
+						.order__total-cost 9 769,15 грн.
+		footer
+
+		include modules/scripts.pug
